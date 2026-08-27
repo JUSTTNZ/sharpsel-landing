@@ -2,12 +2,18 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Apple, PlayCircle, Globe } from "lucide-react";
+import { Globe } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function GetStarted() {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-center bg-background px-6 py-20 text-center sm:px-8">
+    <section
+      className="flex min-h-screen flex-col items-center justify-center bg-background px-6 py-20 text-center sm:px-8"
+      style={{
+        backgroundImage: "radial-gradient(circle, var(--border) 2px, transparent 2px)",
+        backgroundSize: "32px 32px",
+      }}
+    >
       <Link href="/" className="flex items-center gap-1.5">
         <Image
           src="/images/sharpsel-logo-icon.png"
@@ -39,27 +45,25 @@ export default function GetStarted() {
         or head to our main website to learn more.
       </p>
 
-      <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-        <a
-          href="#"
-          className="flex items-center justify-center gap-3 rounded-2xl bg-dark px-6 py-3.5 text-white transition-transform hover:scale-105"
-        >
-          <Apple size={26} />
-          <span className="text-left leading-tight">
-            <span className="block text-xs text-white/60">Download on the</span>
-            <span className="block text-base font-semibold">App Store</span>
-          </span>
+      <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
+        <a href="#" className="transition-transform hover:scale-105">
+          <Image
+            src="/images/app-store-badge.png"
+            alt="Download on the App Store"
+            width={665}
+            height={220}
+            className="h-14 w-auto"
+          />
         </a>
 
-        <a
-          href="#"
-          className="flex items-center justify-center gap-3 rounded-2xl bg-dark px-6 py-3.5 text-white transition-transform hover:scale-105"
-        >
-          <PlayCircle size={26} />
-          <span className="text-left leading-tight">
-            <span className="block text-xs text-white/60">Get it on</span>
-            <span className="block text-base font-semibold">Google Play</span>
-          </span>
+        <a href="#" className="transition-transform hover:scale-105">
+          <Image
+            src="/images/google-play-badge.png"
+            alt="Get it on Google Play"
+            width={670}
+            height={220}
+            className="h-14 w-auto"
+          />
         </a>
       </div>
 
