@@ -4,7 +4,7 @@ import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Sharpsel — Sell on WhatsApp",
+  title: "Sharpsel: Sell on WhatsApp",
   description: "The WhatsApp selling bot for Nigerian vendors",
 };
 

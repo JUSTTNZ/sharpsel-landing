@@ -40,7 +40,7 @@ export default function Navbar() {
             width={130}
             height={147}
             priority
-            className="h-8 w-auto sm:h-9"
+            className="h-8 w-auto lg:h-12"
           />
           <Image
             src="/images/sharpsel-logo-text.png"
@@ -48,7 +48,7 @@ export default function Navbar() {
             width={257}
             height={147}
             priority
-            className={`h-6 w-auto transition duration-300 sm:h-7 ${
+            className={`h-6 w-auto transition duration-300 lg:h-9 ${
               onDark ? "brightness-0 invert" : ""
             }`}
           />
@@ -70,12 +70,12 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <a
-          href="#get-started"
+        <Link
+          href="/get-started"
           className="hidden rounded-full bg-accent-gradient px-5 py-2.5 text-sm font-semibold text-accent-text transition-transform hover:scale-105 lg:inline-block"
         >
           Get started
-        </a>
+        </Link>
 
         <button
           type="button"
@@ -109,13 +109,13 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="#get-started"
+          <Link
+            href="/get-started"
             onClick={() => setOpen(false)}
             className="mt-2 rounded-full bg-accent-gradient px-5 py-2.5 text-center text-sm font-semibold text-accent-text"
           >
             Get started
-          </a>
+          </Link>
         </nav>
       )}
     </header>

@@ -7,14 +7,14 @@ const features = [
   {
     title: "Checkout without leaving the chat",
     description:
-      "Customers get a secure Paystack link, pay in seconds, and receive instant confirmation — all inside the same WhatsApp thread.",
+      "Customers get a secure Paystack link, pay in seconds, and receive instant confirmation, all inside the same WhatsApp thread.",
     image: "/images/feature-checkout.png",
     alt: "A WhatsApp chat showing a customer paying via a Paystack link and getting order confirmation and delivery updates",
   },
   {
     title: "A bot that never sleeps",
     description:
-      "Your WhatsApp becomes an automated shop. The bot greets customers, shows your catalogue, takes orders, and collects delivery addresses — in English or Pidgin — even at 2am while you sleep.",
+      "Your WhatsApp becomes an automated shop. The bot greets customers, shows your catalogue, takes orders, and collects delivery addresses, in English or Pidgin, even at 2am while you sleep.",
     video: "/images/feature-night-bot.mp4",
     poster: "/images/feature-night-bot.png",
   },
@@ -30,7 +30,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="bg-dark">
+    <section id="features" className="scroll-mt-24 bg-dark">
       <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12">
         <motion.h2
           initial={{ opacity: 0, y: 16 }}
@@ -86,7 +86,7 @@ export default function Features() {
               <h3 className="mt-6 text-lg font-semibold text-white">
                 {feature.title}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-white/60">
+              <p className="mt-2 text-sm font-light leading-relaxed text-white/60">
                 {feature.description}
               </p>
             </motion.div>
@@ -102,11 +102,11 @@ export default function Features() {
         >
           <blockquote className="font-heading text-2xl font-[330] leading-[1.3] tracking-[-0.01em] text-white sm:text-3xl">
             &ldquo;We built Sharpsel because Nigerian vendors deserve a way to
-            sell that&apos;s as simple as chatting with a customer — no app,
+            sell that&apos;s as simple as chatting with a customer: no app,
             no website, no stress.&rdquo;
           </blockquote>
           <figcaption className="mt-4 text-sm font-medium text-white/60">
-            — Sharpsel Team
+            Sharpsel Team
           </figcaption>
         </motion.figure>
       </div>

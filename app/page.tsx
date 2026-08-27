@@ -14,9 +14,9 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
+      <Features />
       <TrustBar />
       <HowItWorks />
-      <Features />
       <NigeriaMap />
       <Pricing />
       <Testimonials />

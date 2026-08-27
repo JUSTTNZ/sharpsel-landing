@@ -6,25 +6,21 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-background">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 py-16 sm:px-8 lg:grid-cols-2 lg:gap-12 lg:px-12 lg:py-20">
+    <section className="relative flex min-h-[110vh] items-start overflow-hidden bg-background">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 pb-16 pt-24 sm:px-8 lg:grid-cols-2 lg:gap-12 lg:px-12 lg:pb-20 lg:pt-28">
         {/* Left column */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <span className="inline-flex items-center rounded-full bg-green-tint px-4 py-1.5 text-sm font-medium text-accent-text">
-            Built for Nigerian vendors
-          </span>
-
-          <h1 className="mt-6 font-heading text-4xl font-[330] leading-[1.08] tracking-[-0.01em] text-text-primary sm:text-5xl">
+          <h1 className="font-heading text-4xl font-[330] leading-[1.08] tracking-[-0.01em] text-text-primary sm:text-5xl">
             Turn WhatsApp chats into paid orders
           </h1>
 
-          <p className="mt-5 max-w-md text-base leading-relaxed text-text-secondary">
+          <p className="mt-5 max-w-md text-base font-light leading-relaxed text-text-secondary">
             Sharpsel gives your business an AI-powered WhatsApp bot that
-            shows off your products, takes orders, and gets you paid —
+            shows off your products, takes orders, and gets you paid,
             automatically.
           </p>
 
@@ -32,7 +28,7 @@ export default function Hero() {
             <p className="text-base font-semibold text-white">
               Start for free, sell for less
             </p>
-            <p className="mt-1 text-sm text-white/60">
+            <p className="mt-1 text-sm font-light text-white/60">
               14-day free trial. No card required.
             </p>
 
@@ -45,9 +41,9 @@ export default function Hero() {
               <button
                 type="submit"
                 aria-label="Get started"
-                className="absolute right-1.5 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-accent-gradient text-accent-text transition-transform hover:scale-105"
+                className="absolute right-1.5 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-accent-gradient text-accent-text transition-transform hover:scale-105"
               >
-                <ArrowRight size={18} />
+                <ArrowRight size={20} />
               </button>
             </form>
           </div>
