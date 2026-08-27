@@ -27,7 +27,7 @@ export default function GetStarted() {
           alt="Sharpsel"
           width={257}
           height={147}
-          className="h-7 w-auto"
+          className="h-14 w-auto"
         />
       </Link>
 

@@ -60,7 +60,7 @@ export default function Footer() {
               alt="Sharpsel"
               width={257}
               height={147}
-              className="h-7 w-auto brightness-0 invert lg:h-11"
+              className="h-14 w-auto brightness-0 invert lg:h-[5.5rem]"
             />
           </div>
           <p className="text-sm text-white/60">

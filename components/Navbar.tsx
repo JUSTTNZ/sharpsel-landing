@@ -48,7 +48,7 @@ export default function Navbar() {
             width={257}
             height={147}
             priority
-            className={`h-6 w-auto transition duration-300 lg:h-9 ${
+            className={`h-12 w-auto transition duration-300 lg:h-[4.5rem] ${
               onDark ? "brightness-0 invert" : ""
             }`}
           />
